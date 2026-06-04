@@ -1,0 +1,34 @@
+{
+  "name": "code-timer",
+  "displayName": "Code Timer",
+  "description": "Track your coding time per project. See daily/weekly stats in the status bar.",
+  "version": "1.0.0",
+  "publisher": "devkit",
+  "license": "MIT",
+  "engines": {"vscode": "^1.74.0"},
+  "categories": ["Other"],
+  "keywords": ["timer", "productivity", "tracking", "coding time"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {"command": "code-timer.showStats", "title": "Code Timer: Show Stats"},
+      {"command": "code-timer.resetStats", "title": "Code Timer: Reset Stats"}
+    ],
+    "configuration": {
+      "title": "Code Timer",
+      "properties": {
+        "code-timer.idleTimeout": {
+          "type": "number",
+          "default": 300,
+          "description": "Seconds of inactivity before pausing timer"
+        },
+        "code-timer.showInStatusBar": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show timer in status bar"
+        }
+      }
+    }
+  }
+}
