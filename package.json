@@ -1,9 +1,10 @@
 {
-  "name": "code-timer",
-  "displayName": "Code Timer",
+  "name": "devkit-code-timer",
+  "displayName": "DevKit Code Timer",
   "description": "Track your coding time per project. See daily/weekly stats in the status bar.",
   "version": "1.0.0",
-  "publisher": "devkit",
+  "publisher": "devkit-tools",
+  "repository": {"type": "git", "url": "https://github.com/479464887-rgb/vscode-code-timer"},
   "license": "MIT",
   "engines": {"vscode": "^1.74.0"},
   "categories": ["Other"],
