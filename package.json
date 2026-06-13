@@ -4,17 +4,37 @@
   "description": "Track your coding time per project. See daily/weekly stats in the status bar.",
   "version": "1.0.0",
   "publisher": "devkit-tools",
-  "repository": {"type": "git", "url": "https://github.com/479464887-rgb/vscode-code-timer"},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/479464887-rgb/vscode-code-timer"
+  },
   "license": "MIT",
-  "engines": {"vscode": "^1.74.0"},
-  "categories": ["Other"],
-  "keywords": ["timer", "productivity", "tracking", "coding time"],
-  "activationEvents": ["onStartupFinished"],
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "timer",
+    "productivity",
+    "tracking",
+    "coding time"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./extension.js",
   "contributes": {
     "commands": [
-      {"command": "code-timer.showStats", "title": "Code Timer: Show Stats"},
-      {"command": "code-timer.resetStats", "title": "Code Timer: Reset Stats"}
+      {
+        "command": "code-timer.showStats",
+        "title": "Code Timer: Show Stats"
+      },
+      {
+        "command": "code-timer.resetStats",
+        "title": "Code Timer: Reset Stats"
+      }
     ],
     "configuration": {
       "title": "Code Timer",
